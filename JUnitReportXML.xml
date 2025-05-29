@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="0.046" timestamp="2025-05-28T15:05:16.887187" hostname="Macmini"><testcase classname="samplepackage.test_SampleFile1" name="test_sample_one" time="0.001"><failure message="AssertionError: a is not equal to b&#10;assert 5 == 10">def test_sample_one():
+        a = 5
+        b = 10
+&gt;       assert a == b, "a is not equal to b"
+E       AssertionError: a is not equal to b
+E       assert 5 == 10
+
+samplepackage/test_SampleFile1.py:4: AssertionError</failure></testcase><testcase classname="samplepackage.test_SampleFile1" name="test_sample_two" time="0.000" /><testcase classname="samplepackage.test_SampleFile1" name="test_sample_three" time="0.000"><failure message="AssertionError: assert False&#10; +  where False = &lt;method-wrapper '__eq__' of str object at 0x10f02e730&gt;('Shuhada')&#10; +    where &lt;method-wrapper '__eq__' of str object at 0x10f02e730&gt; = 'Ana'.__eq__">def test_sample_three():
+        a = "Ana"
+        b = "Shuhada"
+&gt;       assert a.__eq__(b)
+E       AssertionError: assert False
+E        +  where False = &lt;method-wrapper '__eq__' of str object at 0x10f02e730&gt;('Shuhada')
+E        +    where &lt;method-wrapper '__eq__' of str object at 0x10f02e730&gt; = 'Ana'.__eq__
+
+samplepackage/test_SampleFile1.py:16: AssertionError</failure></testcase><testcase classname="samplepackage.test_SampleFile2" name="test_sample_file_two" time="0.000" /><testcase classname="samplepackagetwo.test_SPT" name="test_spt_one" time="0.000" /></testsuite></testsuites>
