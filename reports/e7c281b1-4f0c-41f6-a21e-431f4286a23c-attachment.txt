@@ -1,0 +1,3 @@
+Launch browser
+Open application url in browser
+Testing test_register_with_mandatory_fields
